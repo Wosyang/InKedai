@@ -169,6 +169,7 @@ return [
         /*
          * Application Service Providers...
          */
+        
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
@@ -188,6 +189,7 @@ return [
     |
     */
 
+<<<<<<< Updated upstream
     'aliases' => [
 
         'App' => Illuminate\Support\Facades\App::class,
@@ -231,5 +233,11 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
     ],
+=======
+    
+    'aliases' => Facade::defaultAliases()->merge([
+        // 'Example' => App\Facades\Example::class,
+    ])->toArray(),
+>>>>>>> Stashed changes
 
 ];
