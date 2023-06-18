@@ -14,7 +14,8 @@ class MenuController extends Controller
 		$menu = DB::table('menu')->get();
  
     	// mengirim data menu ke view index
-		return view('menu',['menu' => $menu]);
+		return view('MenuPenjual.menu',['menu' => $menu]);
+		// return view('MenuPenjual.uploadmenu');
  
 	}
  
@@ -23,7 +24,7 @@ class MenuController extends Controller
 	{
  
 		// memanggil view tambah
-		return view('menu_tambah');
+		return view('MenuPenjual.menu_tambah');
  
 	}
  
@@ -49,7 +50,7 @@ class MenuController extends Controller
 		// mengambil data menu berdasarkan id yang dipilih
 		$menu = DB::table('menu')->where('id',$id)->get();
 		// passing data menu yang didapat ke view edit.blade.php
-		return view('menu_edit',['menu' => $menu]);
+		return view('MenuPenjual.menu_edit',['menu' => $menu]);
  
 	}
  

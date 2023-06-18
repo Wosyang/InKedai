@@ -16,6 +16,7 @@ return new class extends Migration
             $table->char('name', 50);
             $table->char('email', 100);
             $table->char('password');
+            $table->double('kedaiWallet')->default(0);
    });
     }
 

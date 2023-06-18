@@ -17,28 +17,21 @@
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
-<link href="./style.css" rel="stylesheet">
+<!-- <link href="./style.css" rel="stylesheet">-->
+<!-- Custom fonts for this template-->
+<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+<script src="https://kit.fontawesome.com/2d5e9d9e9d.js" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="stylespembeli.css" />
+
 </head>
 <body>
-
-    <div class="container">
-        <a href="/login" style="font-size: 24px; color:#7FBCD2 " class="btn btn-link fas fa-angle-left " role="button">Kembali</a>
-	<h2 class="text-center" style="color: #7FBCD2">Daftar</h2>
-    <br/>
-    <div class="dropdown">
-        <select style="background: #7FBCD2; border-radius:360px; box-shadow: 0 19px 38px;" type="button" class="btn btn-primary dropdown-toggle btn-block" data-toggle="dropdown">
-          PEMBELI
-            <option>PENJUAL</option>
-            <option>PEMBELI</option>
-        </select>
-    </div>
+	
 
 	@yield('atas')
 
 	<br/>
-	<br/>
 
 	@yield('bawah')
-</div>
 </body>
 </html>

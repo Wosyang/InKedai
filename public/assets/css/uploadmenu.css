@@ -1,0 +1,23 @@
+
+.btn {
+    border: 2px solid transparent;
+    background: #FFCD1D;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: px;
+    padding: 10px 0;
+    text-decoration: none;
+    text-shadow: none;
+    border-radius: 20px;
+    box-shadow: none;
+    transition: 0.25s;
+    display: block;
+    width: 250px;
+  margin: auto;
+  position: relative;
+  top: 250px;
+  }
+
+  .btn:hover {
+    background-color: #00B4CC;
+  }

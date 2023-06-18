@@ -1,9 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Custom Auth in Laravel</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
+
+@extends('master')
+
+@section('Header')
 <body>
 <nav class="navbar navbar-light navbar-expand-lg mb-5" style="background-color: #e3f2fd;">
 <div class="container">
@@ -30,6 +28,7 @@ aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 </div>
 </div>
 </nav>
-@yield('content')
-</body>
-</html>
+@endsection
+@section('Content')
+@yield('Content')
+@endsection

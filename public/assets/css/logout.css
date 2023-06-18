@@ -1,0 +1,28 @@
+.btn {
+    border: 2px solid transparent;
+    background: #FFCD1D;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 10px;
+    padding: 10px 0;
+    text-decoration: none;
+    text-shadow: none;
+    border-radius: 20px;
+    box-shadow: none;
+    transition: 0.25s;
+    display: block;
+    width: 250px;
+  margin: auto;
+  }
+
+  .btn:hover {
+    background-color: #2980B9;
+  }
+
+  .p {
+    margin: auto;
+  }
+
+  .h4 {
+    margin: auto
+  }

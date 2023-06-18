@@ -9,6 +9,7 @@ use App\Models\Pembeli;
 use Illuminate\Support\Facades\Auth;
 use resources\views\Pembeli\login_pembeli;
 use resources\views\Pembeli\register_pembeli;
+use resources\views\Pembeli\homePembeli;
 use resources\views\dashboard;
 
  
@@ -18,22 +19,24 @@ class PembeliController extends Controller
     public function index()
     {
         return view('pembeli.login_pembeli');
+        
     }   
        
  
     public function authLogin(Request $request)
     {
+
         $request->validate([
             'email' => 'required',
             'password' => 'required',
         ]);
-        
+      
     
         $credentials = $request->only('email', 'password');
         if (Auth::guard('pembelis')->attempt($credentials)) {
-            return redirect('dashboard')->withSuccess('Signed in');
+            return redirect('homePembeli')->withSuccess('Signed in');
         }
-   
+
         return redirect("login_pembeli")->withSuccess('Login details are not valid');
     }
  
@@ -51,12 +54,13 @@ class PembeliController extends Controller
             'name' => 'required',
             'email' => 'required|email|unique:pembelis',
             'password' => 'required|min:6',
+            'confirmpassword' => 'required|min:6|same:password',
         ]);
             
         $data = $request->all();
         $check = $this->create($data);
           
-        return redirect("dashboard")->withSuccess('You have signed-in');
+        return redirect("login_pembeli")->withSuccess('You have signed-up');
     }
  
  
@@ -70,10 +74,10 @@ class PembeliController extends Controller
     }    
      
  
-    public function dashboard()
+    public function homePembeli()
     {
         if(Auth::check()){
-            return view('dashboard');
+            return view('pembeli.homePembeli');
         }
    
         return redirect("login_pembeli")->withSuccess('You are not allowed to access');
@@ -85,5 +89,10 @@ class PembeliController extends Controller
         Auth::logout();
    
         return Redirect('login_pembeli');
+    }
+
+    public function topup() {
+   
+        return view('pembeli.topup');
     }
 }

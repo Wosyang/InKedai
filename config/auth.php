@@ -44,6 +44,10 @@ return [
             'driver' => 'session',
             'provider' => 'pembeli',
         ],
+        'penjuals' => [
+            'driver' => 'session',
+            'provider' => 'penjual',
+        ],
     ],
 
     /*
@@ -71,6 +75,10 @@ return [
         'pembeli' => [
             'driver' => 'eloquent',
             'model' => App\Models\Pembeli::class,
+        ],
+        'penjual' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Penjual::class,
         ],
 
         // 'users' => [
