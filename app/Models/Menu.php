@@ -8,7 +8,7 @@ use Illuminate\Foundation\Auth\User as Model;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 
-class Pembeli extends Model
+class Menu extends Model
 {
     use HasApiTokens, HasFactory, Notifiable;
 
@@ -17,12 +17,13 @@ class Pembeli extends Model
      *
      * @var array<int, string>
      */
-    protected $table = 'Pembelis';
-    public $timestamps = false;
+    protected $table = 'menu';
     protected $fillable = [
         'name',
-        'email',
-        'password',
+        'deskripsi_menu',
+        'stok_menu',
+        'harga_menu',
+        'penjualId'
     ];
 
     /**
@@ -30,10 +31,6 @@ class Pembeli extends Model
      *
      * @var array<int, string>
      */
-    protected $hidden = [
-        'password',
-        'remember_token',
-    ];
 
     /**
      * The attributes that should be cast.
@@ -43,4 +40,11 @@ class Pembeli extends Model
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public $timestamps = false;
+
+    public function penjual()
+    {
+        return $this->belongsTo(Penjual::class, 'penjualId');
+    }
 }

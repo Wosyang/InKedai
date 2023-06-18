@@ -20,6 +20,7 @@
 
     color: #000000;
 }
+
 #saldo {
     font-family: "Poppins";
     font-style: normal;
@@ -40,6 +41,7 @@
 
     color: #7fbcd2;
 }
+
 #limapuluh {
     font-family: "Poppins";
     font-style: normal;
@@ -48,9 +50,10 @@
     line-height: 134%;
     font-weight: bold;
 }
-#btn,
+
 #btn1,
-#btn2 {
+#btn2,
+#btn3 {
     width: 340px;
     text-align: center;
 }
@@ -64,14 +67,15 @@
     font-weight: lighter;
 }
 
-#rowku,
-#rowku1,
-#rowku2 {
+#btn4,
+#btn5,
+#btn6 {
     margin-top: 50px;
     margin-bottom: 50px;
     width: 340px;
     text-align: center;
 }
+
 .atas .limap {
     background: #f7f7f7a1;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -127,6 +131,7 @@
     caret-color: transparent;
     transition: width 0.4s linear;
 }
+
 ::placeholder {
     color: #ffffff47;
     font-family: "Poppins";
@@ -135,6 +140,7 @@
     font-size: 28px;
     line-height: 48px;
 }
+
 .search-home .search-input-home {
     color: #ffffff;
     caret-color: #fcfcfc;
@@ -144,6 +150,7 @@
     font-size: 28px;
     padding-left: 5%;
 }
+
 .search-icon-home {
     position: absolute;
     height: 46px;
@@ -189,6 +196,7 @@
     top: 545px;
     left: 630px;
 }
+
 .rectangle-86 {
     background-color: #ffeaa4;
     border-radius: 11px;
@@ -202,11 +210,13 @@
     margin-left: 5%;
     margin-top: 1%;
 }
+
 .isisaldo {
     margin-left: 4%;
     font-family: "Poppins";
     font-style: normal;
 }
+
 .sisasaldohome {
     position: absolute;
     width: 351px;
@@ -228,6 +238,7 @@
     top: 5px;
     left: 800px;
 }
+
 .E-Wallet {
     position: absolute;
     left: 790px;
@@ -241,6 +252,7 @@
 
     color: #565151;
 }
+
 .tf {
     position: absolute;
     width: 351px;
@@ -262,6 +274,7 @@
     left: 249px;
     top: 70px;
 }
+
 .baksogambar,
 .sotogambar,
 .warkopgambar,
@@ -270,6 +283,7 @@
     left: 390px;
     z-index: 1;
 }
+
 .baksogambar {
     top: 643px;
 }
@@ -304,9 +318,11 @@
     font-size: 32px;
     line-height: 60px;
 }
+
 .tulisanmenuhome {
     margin-left: 5%;
 }
+
 .card-pakbambang {
     top: 634px;
 }
@@ -372,6 +388,7 @@
 
     color: #ffffff;
 }
+
 .card {
     border: none;
 }
@@ -479,12 +496,14 @@
     z-index: 2;
     list-style-type: none;
 }
+
 .dropdowndiskon p {
     position: relative;
     font-size: 20px;
     line-height: 30px;
     left: 0%;
 }
+
 .icondiskonmenu {
     position: absolute;
     left: 30%;
@@ -520,6 +539,7 @@
     top: 25%;
     width: 53px;
 }
+
 .diskonpersentage p,
 .diskonprice p,
 .card-riwayatdiskon p {
@@ -549,6 +569,7 @@
     z-index: 1;
     transition: bottom 0.3s ease;
 }
+
 .iconriwayatdiskon {
     position: absolute;
     left: 3%;
@@ -594,6 +615,7 @@
     position: relative;
     cursor: pointer;
 }
+
 .menu-dropdown {
     position: absolute;
     z-index: 100;
@@ -606,15 +628,17 @@
     left: 0;
     z-index: 101;
     transition: 0.5s border-top;
-    transform: scale(1.1); /* Mengubah ukuran menjadi 110% */
-    filter: blur(4px); /* Mengatur efek blur dengan 4px */
+    transform: scale(1.1);
+    /* Mengubah ukuran menjadi 110% */
+    filter: blur(4px);
+    /* Mengatur efek blur dengan 4px */
 }
 
-.dropdowndiskon:not(:hover) > .menu-dropdown {
+.dropdowndiskon:not(:hover)>.menu-dropdown {
     z-index: 99;
 }
 
-.menu-dropdown > * {
+.menu-dropdown>* {
     overflow: hidden;
     transition: 0.5s height cubic-bezier(0.73, 0.32, 0.34, 1.5),
         0.5s padding cubic-bezier(0.73, 0.32, 0.34, 1.5),
@@ -622,7 +646,7 @@
         0.2s background-color;
 }
 
-.dropdowndiskon:not(:hover) > .menu-dropdown > * {
+.dropdowndiskon:not(:hover)>.menu-dropdown>* {
     visibility: hidden;
     height: 0;
     padding-top: 0;
@@ -644,20 +668,24 @@
     padding: 55px 42px;
     width: 1440px;
 }
+
 .hidden,
 .hidden * {
     pointer-events: none;
     visibility: hidden;
 }
+
 .frame-container {
     gap: 56px;
     margin-top: 19px;
     min-width: 562px;
 }
+
 .desktop-6 frame-1 {
     align-items: flex-start;
     display: flex;
 }
+
 .frame-4 {
     background-color: #ffcc1d;
     border-radius: 11px;
@@ -667,11 +695,13 @@
     min-width: 253px;
     padding: 18.6px 19.7px;
 }
+
 .desktop-6 .diskon {
     font-family: "Poppins";
     letter-spacing: 0;
     line-height: normal;
 }
+
 .diskon-nominal {
     color: #7fbcd2;
     cursor: pointer;
@@ -691,6 +721,7 @@
     min-width: 253px;
     padding: 16px 50px;
 }
+
 .persentase {
     cursor: pointer;
     letter-spacing: 0;
@@ -698,6 +729,7 @@
     min-height: 34px;
     width: 152px;
 }
+
 .overlap-group {
     border-radius: 11px;
     height: 152px;
@@ -706,6 +738,7 @@
     position: relative;
     width: 1066px;
 }
+
 .bakso-bapak-bambang {
     left: 30px;
     letter-spacing: 0;
@@ -713,6 +746,7 @@
     position: absolute;
     top: 26px;
 }
+
 .price {
     color: var (--white);
     font-family: var (--font-family-poppins);
@@ -724,6 +758,7 @@
     position: absolute;
     top: 82px;
 }
+
 .title {
     color: #ffffff;
     font-family: var(--font-family-poppins);
@@ -735,6 +770,7 @@
     position: absolute;
     top: 3px;
 }
+
 .bakso-jumbo-pak-bambang {
     color: #ffffff;
     font-family: var (--font-family-poppins);
@@ -747,6 +783,7 @@
     position: absolute;
     top: 53px;
 }
+
 .rectangle-4 {
     background-color: #7fbcd2;
     border-radius: 11px;
@@ -757,6 +794,7 @@
     top: 0;
     width: 1066px;
 }
+
 .group-99 {
     align-items: center;
     align-self: flex-start;
@@ -764,10 +802,12 @@
     gap: 12px;
     min-width: 257px;
 }
+
 .vector {
     height: 61px;
     width: 23px;
 }
+
 .diskon-menu {
     color: #000000;
     font-size: var (--font-size-x1);
@@ -776,6 +816,7 @@
     min-height: 47px;
     width: 220px;
 }
+
 .frame-2 {
     background-color: #7fbcd2;
     border-radius: 11px;
@@ -786,6 +827,7 @@
     min-width: 814px;
     padding: 25px;
 }
+
 .harga-setelah-diskon {
     letter-spacing: 0;
     line-height: normal;
@@ -802,16 +844,19 @@
     font-style: normal;
     color: #7fbcd2;
 }
+
 .tambahdiskon-left h3 {
     font-weight: 700;
     font-size: 60px;
     line-height: 60px;
 }
+
 #keteranganbaksojumbo {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
 }
+
 #hargabaksojumbo {
     font-weight: 900;
     font-size: 32px;
@@ -824,6 +869,7 @@
     border-top-left-radius: 10% 50%;
     border-bottom-left-radius: 10% 50%;
 }
+
 .tambahdiskon-left img {
     margin-top: 15%;
     margin-bottom: 5%;
@@ -831,18 +877,22 @@
     -webkit-animation: mover 2s infinite alternate;
     animation: mover 1s infinite alternate;
 }
+
 @-webkit-keyframes mover {
     0% {
         transform: translateY(0);
     }
+
     100% {
         transform: translateY(-20px);
     }
 }
+
 @keyframes mover {
     0% {
         transform: translateY(0);
     }
+
     100% {
         transform: translateY(-20px);
     }
@@ -851,6 +901,7 @@
 .tambahdiskon .tambahdiskon-form {
     padding: 4%;
 }
+
 .btntambahdiskon {
     float: right;
     margin-top: 5%;
@@ -865,6 +916,7 @@
     cursor: pointer;
     margin-bottom: 10%;
 }
+
 .tambahdiskon .nav-tabs {
     margin-top: 3%;
     margin-left: 30%;
@@ -874,6 +926,7 @@
     width: 50%;
     float: center;
 }
+
 .tambahdiskon .nav-tabs .nav-link {
     padding: 0%;
     height: 80px;
@@ -883,9 +936,11 @@
     border-top-right-radius: 1.5rem;
     border-bottom-right-radius: 1.5rem;
 }
+
 .tambahdiskon .nav-tabs .nav-link:hover {
     border: none;
 }
+
 .tambahdiskon .nav-tabs .nav-link.active {
     width: 500px;
     color: #0062cc;
@@ -893,6 +948,7 @@
     border-top-left-radius: 1.5rem;
     border-bottom-left-radius: 1.5rem;
 }
+
 .form-group-pricenominal {
     margin-top: 19%;
     width: 70%;
@@ -904,12 +960,14 @@
     font-size: 30px;
     line-height: 30px;
 }
+
 #inputnominal {
     height: 70px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 11px;
     font-size: 40px;
 }
+
 #inputpercent {
     width: 30%;
     height: 70px;
@@ -918,12 +976,14 @@
     font-size: 40px;
     text-align: center;
 }
+
 .percent-icon {
     position: absolute;
     top: 36%;
     left: 38%;
     width: 60px;
 }
+
 .tambahdiskon-heading {
     text-align: center;
     margin-top: 5%;
@@ -931,6 +991,7 @@
     color: #495057;
     font-size: 50px;
 }
+
 #periode-masa-aktif {
     font-family: "Poppins";
     font-style: normal;
@@ -943,6 +1004,7 @@
 #enddate {
     margin-top: 3%;
 }
+
 .textbox-n {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 11px;
@@ -981,11 +1043,13 @@ input[type="checkbox"] {
 
     color: #7fbcd2;
 }
+
 .gambarantri {
     margin-left: 20%;
     margin-top: 5%;
     width: 65%;
 }
+
 .antrian-ke {
     position: absolute;
     top: 47%;
@@ -998,6 +1062,7 @@ input[type="checkbox"] {
 
     color: #7fbcd2;
 }
+
 .card-no-pesanan {
     margin-top: 10%;
     background: #ffcc1d;
@@ -1013,6 +1078,7 @@ input[type="checkbox"] {
     color: #7fbcd2;
     text-align: center;
 }
+
 .silahkan {
     margin-top: 2.5%;
     font-family: "Poppins";
@@ -1036,6 +1102,7 @@ input[type="checkbox"] {
 
     color: #ffffff;
 }
+
 .summary-order {
     margin-top: 4.3%;
     font-family: "Poppins";
@@ -1064,6 +1131,7 @@ input[type="checkbox"] {
 
     color: #ffffff;
 }
+
 .sum-pesanan {
     margin-top: 3%;
     margin-left: 46%;
@@ -1098,6 +1166,7 @@ input[type="checkbox"] {
     margin-left: 30%;
     margin-top: 3%;
 }
+
 .table-saldo,
 th,
 td {
@@ -1113,14 +1182,17 @@ td {
     border-collapse: collapse;
     width: 40%;
 }
+
 th,
 td {
     padding: 30px;
     text-align: center;
 }
+
 #seratus8k {
     background-color: #7fbcd2;
 }
+
 .total-bayar {
     margin-top: 3%;
     margin-left: 30%;
@@ -1133,6 +1205,7 @@ td {
 
     color: #7fbcd2;
 }
+
 .btnpesanskrg {
     background: #ffcc1d;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1159,6 +1232,7 @@ td {
     left: 0px;
     top: 0px;
 }
+
 .transfer-valid {
     font-family: "Poppins";
     font-style: normal;
@@ -1168,18 +1242,21 @@ td {
     color: #7fbcd2;
     margin-top: 5%;
 }
+
 .body-konfirmasibayar {
     margin-top: 5%;
     background-color: #7fbcd2;
     border-radius: 60px;
     margin-bottom: -10%;
 }
+
 .centangpic {
     margin-left: 42%;
     margin-top: 5%;
     height: 50%;
     width: 15%;
 }
+
 .card-konfirmasibayar {
     width: 30%;
     background: #ffc961;
@@ -1195,6 +1272,7 @@ td {
     margin-top: 3%;
     margin-left: 35%;
 }
+
 .btncetakbukti,
 .btnbackhome {
     background: #ffcc1d;
@@ -1213,6 +1291,7 @@ td {
     margin-bottom: 10%;
     color: #7fbcd2;
 }
+
 .card-haribuktipesanan {
     background: #ffcc1d;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1232,11 +1311,13 @@ td {
 
     color: #ffffff;
 }
+
 .iconlunas {
     position: absolute;
     left: 75%;
     top: 50%;
 }
+
 /* daftarkankedai */
 .card-daftarkan {
     background: #7fbcd2;
@@ -1256,6 +1337,7 @@ td {
     color: #ffffff;
     text-align: center;
 }
+
 .card-Kedai-Anda {
     background: #ffcc1d;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1273,24 +1355,28 @@ td {
     color: #7fbcd2;
     text-align: center;
 }
+
 .gambarbintang {
     position: absolute;
     top: 20%;
     left: 25%;
     width: 8%;
 }
+
 .gambarbintang2 {
     position: absolute;
     top: 10%;
     left: 65%;
     width: 8%;
 }
+
 .gambartoko {
     position: absolute;
     width: 30%;
     left: 35%;
     top: 50%;
 }
+
 .btndaftar {
     float: right;
     margin-top: 38%;
@@ -1309,6 +1395,7 @@ td {
     font-size: 40px;
     line-height: 36px;
 }
+
 /* PENDAFTARAN KEDAI */
 
 /* ==========================================================================
@@ -1400,11 +1487,13 @@ td {
         display: block;
         padding: 24px 30px;
     }
+
     .form-row .name,
     .form-row .value {
         display: block;
         width: 100%;
     }
+
     .form-row .name {
         margin-top: 0;
         margin-bottom: 12px;
@@ -1468,8 +1557,8 @@ legend {
 /**
    * Remove trailing margins from nested lists.
    */
-li > ol,
-li > ul {
+li>ol,
+li>ul {
     margin-bottom: 0;
 }
 
@@ -1628,8 +1717,7 @@ h6 {
 /* ==========================================================================
      #BUTTON
      ========================================================================== */
-.btn {
-}
+.btn {}
 
 .btn--radius {
     -webkit-border-radius: 3px;
@@ -1802,7 +1890,7 @@ textarea {
     display: none;
 }
 
-.input-file + label {
+.input-file+label {
     font-size: 15px;
     color: #fff;
     color: white;
@@ -1821,8 +1909,8 @@ textarea {
     cursor: pointer;
 }
 
-.input-file:focus + label,
-.input-file + label:hover {
+.input-file:focus+label,
+.input-file+label:hover {
     background: #1b1b1b;
 }
 
@@ -1920,6 +2008,7 @@ textarea {
         padding: 50px 30px;
     }
 }
+
 .name-jambukaku,
 .senin,
 .selasa,
@@ -1938,21 +2027,27 @@ textarea {
 
     color: #000000;
 }
-.jambuka,.jambukarabu{
+
+.jambuka,
+.jambukarabu {
     left: 14%;
 }
+
 .jamtutup {
     position: absolute;
     left: 55%;
 }
-.jambukaselasa, .jambukajumat  {
-left: 11%
+
+.jambukaselasa,
+.jambukajumat {
+    left: 11%
 }
-.jambukakamis, .jambukasabtu
-{
+
+.jambukakamis,
+.jambukasabtu {
     left: 12%;
 }
-.jambukaminggu
-{
+
+.jambukaminggu {
     left: 9%;
 }

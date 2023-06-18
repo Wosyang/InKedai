@@ -17,6 +17,7 @@ class Penjual extends Model
      *
      * @var array<int, string>
      */
+    protected $table = 'Penjuals';
     public $timestamps = false;
     protected $fillable = [
         'name',

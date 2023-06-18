@@ -8,7 +8,7 @@ use Illuminate\Foundation\Auth\User as Model;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 
-class Pembeli extends Model
+class Pesanan extends Model
 {
     use HasApiTokens, HasFactory, Notifiable;
 
@@ -17,28 +17,24 @@ class Pembeli extends Model
      *
      * @var array<int, string>
      */
+    protected $table = 'pesanan';
     protected $fillable = [
-        'name',
-        'deskripsi_menu',
-        'stok_menu',
-        'harga_menu',
-        'penjualId'
+        'id',
+        'pembeliId',
+        'menuId',
+        'status',
+        'jumlah',
+        'biaya',
     ];
+    public $timestamps = true;
 
-    /**
-     * The attributes that should be hidden for serialization.
-     *
-     * @var array<int, string>
-     */
+    public function menu()
+    {
+        return $this->belongsTo(Menu::class, 'menuId');
+    }
 
-    /**
-     * The attributes that should be cast.
-     *
-     * @var array<string, string>
-     */
-    protected $casts = [
-        'email_verified_at' => 'datetime',
-    ];
+    public function pembeli()
+    {
+        return $this->belongsTo(Pembeli::class, 'pembeliId');
+    }
 }
-
-
