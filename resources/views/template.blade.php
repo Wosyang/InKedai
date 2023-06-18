@@ -34,9 +34,11 @@
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: #7FBCD2;">
         <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="h4 nav-link" href="{{ url()->previous() }}" style="color: #ffffff">Back</a>
+            <li class="nav-item" style="display:flex; flex-direction:row;">
                 <a class="h4 nav-link" href="{{ route('signOutPenjual') }}" style="color: #ffffff">Logout</a>
+                <a class="h4 nav-link" href="{{ route('pesanan') }}" style="color: #ffffff">Pesanan</a>
+                <a class="h4 nav-link" href="{{ url()->previous() }}" style="color: #ffffff">Back</a>
+                
             </li>
         </ul>
     </nav>
